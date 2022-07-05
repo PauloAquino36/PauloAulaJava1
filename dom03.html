@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div> A: <span>3</span> </div>
+    <div> B: <span>3</span> </div>
+    <div> A+B: <span>?</span> </div>
+    <script>
+        console.log("Hello World");
+        const eSpans = document.querySelectorAll('span');
+        const eA = eSpans[0];
+        const eB = eSpans[1];
+        const eS = eSpans[2];
+
+        const A = Number(eA.textContent);
+        const B = Number(eB.textContent);
+        const S = A + B;
+
+        eS.textContent = S;
+
+        </script>
+</body>
+</html>
